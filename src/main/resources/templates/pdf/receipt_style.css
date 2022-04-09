@@ -1,0 +1,46 @@
+table{
+  border-collapse: collapse;
+  width:100%;
+  border-spacing: 0;
+  font-size:16px;
+}
+.h1{
+  height:110px;
+}
+.logo{
+  width: 74px;
+  height: 16px;
+}
+.color{
+  color:#00B9F1;
+}
+.l1m1{
+  vertical-align: top;
+}
+.l1m2{
+  vertical-align: bottom;
+  text-align: center;
+}
+.l1m2w1{
+  font-size:24px;
+  color:#21333F;
+}
+.l1m2w2{
+  color:#6F7F89;
+}
+.h2{
+  color:#6F7F89;
+  height: 60px;
+}
+.w2{
+  width: 35%;
+}
+.pos1{
+  height:30px;
+}
+.pos2{
+  height:1px;
+  width:100%;
+  background: #DCE5EB;
+  margin:20px 0;
+}

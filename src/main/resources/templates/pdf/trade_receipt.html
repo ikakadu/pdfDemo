@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>receipt</title>
+  <link rel="stylesheet" href="receipt_style.css" />
+</head>
+<body>
+<table>
+  <tr>
+    <td class="h1 l1m1">
+      <img src="${lklLogo!''}" alt="" class="logo"/>
+      <span class="color"> | </span>
+      <span class="color">跨境支付</span>
+    </td>
+    <td class="h1 l1m2">
+      <span class="l1m2w1">交易回执</span>
+      <br/>
+      <span class="l1m2w2">Payment Receipt</span>
+    </td>
+    <td class="h1">
+      <img src="${ckcgImagePath!''}" alt="" />
+    </td>
+  </tr>
+</table>
+<p class="pos1"></p>
+<table>
+  <tr>
+    <td class="h2 w2">
+      <span>交易流水号：</span>
+      <br/>
+      <span>Transaction ID</span>
+    </td>
+    <td class="h2">${(dto.cashOutId)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>交易时间：</span>
+      <br/>
+      <span>Date</span>
+    </td>
+    <td class="h2">${(dto.cashOutTimeStringFormat)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>付款方：</span>
+      <br/>
+      <span>Remitter</span>
+    </td>
+    <td class="h2">${(dto.mchtName)!''}</td>
+  </tr>
+</table>
+<p class="pos2"></p>
+<table>
+  <tr>
+    <td class="h2 w2">
+      <span>收款账户名:</span>
+      <br/>
+      <span>Bank Account Holder Name</span>
+    </td>
+    <td class="h2">${(dto.cashOutAccount)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>收款银行账号：</span>
+      <br/>
+      <span>Bank Account</span>
+    </td>
+    <td class="h2">${(dto.cashOutCardNum)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>银行名称：</span>
+      <br/>
+      <span>Bank Name</span>
+    </td>
+    <td class="h2">${(dto.cashOutBank)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>SWIFT BIC：</span>
+    </td>
+    <td class="h2">${(dto.swiftBic)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>交易币种：</span>
+      <br/>
+      <span>Currency</span>
+    </td>
+    <td class="h2">${(dto.cashOutCurrency)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>交易金额：</span>
+      <br/>
+      <span>Amounts</span>
+    </td>
+    <td class="h2">${(dto.cashOutAmountYuanStringValue)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>交易手续费：</span>
+      <br/>
+      <span>Transaction Fee</span>
+    </td>
+    <td class="h2">${(dto.cashOutFeeYuanStringValue)!''}</td>
+  </tr>
+  <tr>
+    <td class="h2 w2">
+      <span>交易附言：</span>
+      <br/>
+      <span>Remittance information</span>
+    </td>
+    <td class="h2"></td>
+  </tr>
+</table>
+</body>
+</html>
