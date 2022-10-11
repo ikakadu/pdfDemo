@@ -9,5 +9,7 @@ class PdfDemoApplicationTests {
     @Test
     void contextLoads() {
     }
-
+    @Test
+    void test() {
+    }
 }
